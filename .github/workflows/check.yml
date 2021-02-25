@@ -4,12 +4,8 @@ on: [push, workflow_dispatch]
 
 jobs:
   check:
-    strategy:
-      matrix:
-        runs-on: [ubuntu-latest]
-
-    runs-on: ${{ fromJSON(matrix.runs-on).runs-on }}
-    container: ${{ fromJSON(matrix.runs-on).container }} 
+   
+    runs-on: [ubuntu-latest]
 
     steps:
       - uses: actions/checkout@v2
