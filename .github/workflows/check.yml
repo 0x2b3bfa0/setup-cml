@@ -14,6 +14,6 @@ jobs:
         with:
           node-version: '12'
     
-      - uses: 0x2b3bfa0/setup-cml@v1
+      - uses: 0x2b3bfa0/setup-cml@master
 
   
